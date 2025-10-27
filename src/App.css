@@ -329,3 +329,47 @@ body {
     border-bottom-width: 4px;
   }
 }
+
+/* Footer */
+.app-footer {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-background);
+}
+
+.timetable-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-primary);
+  font-weight: 600;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+
+.timetable-link:hover {
+  background-color: var(--color-primary);
+  color: white;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.timetable-link:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 640px) {
+  .app-footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .timetable-link {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}

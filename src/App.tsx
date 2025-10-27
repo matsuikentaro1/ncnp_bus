@@ -104,6 +104,17 @@ function App() {
       <StatusBar date={dateStr} isServiceDay={isService} isEnded={isEnded} />
 
       <main className="app-content">{content}</main>
+
+      <footer className="app-footer">
+        <a
+          href="https://www.ncnp.go.jp/hospital/news/docs/shuttlebus_timetable.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="timetable-link"
+        >
+          📄 公式時刻表PDF（NCNP）
+        </a>
+      </footer>
     </div>
   );
 }
